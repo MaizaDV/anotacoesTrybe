@@ -1,0 +1,123 @@
+== ls -l ==
+    mostra informações que o ls sozinho não mostra, os tipos de acessos dos arquivos
+
+
+=== PERMISSÕES ===
+R - Read, leitura permitida do arquivo ou diretório, vc tem o acesso de leitura
+W - Write, editar um arquivo ou modificar o conteúdo de um diretório, pode alterar o valor do diretório
+X - Permite executar um arquivo ou acessar um diretório pelo comando cd(Execute)
+(-)Hífen - No início da sequência indica um arquivo comum 
+D - No início da sequência indica um diretório
+
+=permissões=
+1° parte vai ser - ou D, indica se é um arquivo comum ou diretório 
+2° parte possui 3 caracteres e indica permissões de usuário
+3° parte possui 3 caracteres e indica permissões do grupo de usuários dentro do unix
+4° parte possui 3 caracteres e são permissões de outros usuários que não são do mesmo grupo
+
+  Permissões | Links  | Proprietário | Grupo | Tamanho | Data e Hora   | Nome
+  -----------|--------|--------------|-------|---------|---------------|---------
+  drwxr-xr-x | 2 	    | root 	       | root  | 4096    | Out 19 09:10  | composer/
+
+-- Permissões => É possível verificar o tipo do item e nível de permissão para Leitura, Escrita e Execução de item ou diretório;
+-- Links => Número de ligações que o item possui, no caso do diretório, número de subdiretórios que possui;
+-- Proprietário => Quem é a pessoa dona, quem criou. É o diretório padrão da pessoa usuária, o home;
+-- Grupo => Grupo ao qual pertence o item ou diretório. Utilizado para dar permissões à outras pessoas;
+-- Tamanho => Em Bytes;
+-- Data e Hora => Momento em que foi criado ou última modificação;
+-- Nome => Nome do item ou diretório;
+
+=== chmod ===  
+      chmod (caractere)(atribuição)(tipo de permissão) arquivo.txt => chmod u+rw arquivo.txt 
+  Passa informações para dizer qual tipo de permissões colocar, apos o caractere escolhido, pode ser usado 1 de 3 opções de atribuição
+  chmod u - atribui alterações de permissões para o usuário que está utlizando
+  chmod g - alterações de permissões para um grupo 
+  chmod o - alterações de permissões para outruos usuários
+  chmod a - alterações de permissões para todo mundo
+
+  == Após o caractere pode ser atribuído 1 de 3 opções ==
+  =1° Hífen(-)para retirar permissões
+  =2° Mais(+)para acrecentar permissões
+  =3° Igual(=)para deixar extamente igual na condição que quer
+
+=== também é possível usar o modo octal === 
+Para compreendermos esta outra forma, precisamos entender que eles são administrados por meio de valores como descrito abaixo:
+
+  Leitura r - 4
+  Escrita w - 2
+  Execução x - 1
+
+= Esses valores são permissões com base em bits de ligados = 1 e desligados = 0,
+
+  rwx = 111 ( 7 | Acesso Total )
+  r-- = 100 ( 4 | Somente Leitura )
+  -w- = 010 ( 2 | Somente Escrita )
+  --x = 001 ( 1 | Somente Execução )
+  rw- = 110 ( 6 | Somente Leitura e Escrita )
+  r-x = 101 ( 5 | Somente Leitura e Execução )
+  -wx = 011 ( 3 | Somente Escrita e Execução )
+  --- = 000 ( 0 | Todos Acessos Negados )
+
+
+  === Processos === 
+  ps - process, lista de comandos sendo executadas no momento
+  & - Criar processos e deixá-los em background, enquanto um processo está sendo executado, vc pode fazer outras coisas
+  ctrl+z - suspende processos que não estejam em background e o status muda para suspended(suspenso)
+  bg - coloca em background o processo que foi suspenso, o status passa a ser continued(continuado)
+  jobs - exibe todos os processos que estão em background, suspenso ou sendo executados
+  fg %[n°]- forgraund, ele volta a executar um processo suspenso, []é o n° da lista em que o processo está suspenso
+  ctrl+c - para de rodar um processo, eliminar o trabalho em execução.
+  kill %n° - o n° do processo que está em background é finalizado(matar um processo), pode ser feito pelo PID tbm
+  kill -9 PID - força o processo de finalizão caso ele não mate o processo
+
+=== find ===
+  find é um comando para pesquisar em diretórios por arquivos ou outras pastas, de acordo com os parâmetros
+passados a ele. Esses parâmetros podem ser name, date, size e type. Caso nenhum atributo seja passado, ele
+pesquisará tudo que estiver dentro do diretório atual.
+
+# Para listar todos os arquivos que terminam em .txt
+find . -name "*.txt"
+
+# Para localizar todos os diretórios
+find . -type d
+
+# Para localizar todos os arquivos
+find . -type f
+
+# Localizar tanto arquivos quanto diretórios que comecem por algum trecho
+find ./teste -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+./teste/exemplo
+
+# Localizar somente arquivos que comecem por algum trecho
+find ./teste -type f -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+
+# Localizar somente diretórios que comecem por algum trecho
+find ./teste -type d -name "exemplo*"
+# Resultado
+./teste/exemplo
+
+== history ==
+ O history é um comando que mostra o histórico de comandos que você executou no terminal. A quantidade ou 
+o tamanho desse "histórico" podem ser configurados para um número arbitrário de comandos ou para ver todo o histórico.
+
+# Mostra o histórico de comandos
+history
+# Pegar os últimos 10 comandos
+history | tail
+
+== echo ==
+O echo é um comando utilizado em scripts ou no terminal para exibir mensagens na tela ou em um arquivo.
+
+
+echo "Este é um teste"
+# Resultado
+Este é um teste
+
+# Pode ser usado para colocar textos dentro de arquivos.
+echo "Este é mais um teste" > teste.txt
+cat teste.txt
+Este é mais um teste

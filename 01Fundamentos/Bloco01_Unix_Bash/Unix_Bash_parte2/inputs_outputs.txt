@@ -1,0 +1,19 @@
+
+       - inputs -
+=== cat + enter - ele recebe valores como inputs(entrada de dados) digítados pelo usuário, ctrl+d para sair
+=== cat > arquivo.txt - coloca quantos valores quiser dentro de um arquivo, ctrl+d para sair
+O > redireciona a saída padrão para um arquivo, sendo assim
+# caso haja algum conteúdo no arquivo, ele será substituído
+
+=== cat >> arquivo.txt === editar e acrescentar mais valores, ctrl+d para sair
+O >> anexa a saída padrão a um arquivo. Sendo assim, ele adiciona o que for digitado ao final do arquivo em questão
+
+=== cat arquivo1.txt arquivo2.txt > arquivo1e2.txt === pega as informações de dois arquivos e coloca em outro arquivo
+
+       - outputs -
+== sort < arquivo.txt == organiza em ordem crescente os valores do arquivo, não altera de fato o valor do arquivo, é somente para exibição
+== sort < arquivo.txt > arquivoOrdenado.txt  envia os valores do 1° arquivo, para outro arquivo de forma ordenada 
+== who - mostra ques está usando o sistema e quais suas permissões
+== | - pipe, usado para juntar valores e comandos, passar outputs de comandos para outro comando
+O | canaliza a saída do primeiro comando para a entrada do segundo,
+# dessa forma conseguimos realizar comandos de forma sucessiva

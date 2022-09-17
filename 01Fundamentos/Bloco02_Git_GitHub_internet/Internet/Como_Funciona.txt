@@ -1,0 +1,73 @@
+        === INTERNET ===
+    Ela foi criada em 1969 nos Estado Unidos e se chamava ARPA NET, tinha como objetivo interligar laboratorios 
+de pesquisa durante a Guerra Fria.
+    Em 1982 a ARPA net começou a ser usada em vários países e passou a ser chamada de INTERNET.
+    Em 1987 foi liberado o uso comercial nos Estados Unidos
+    Em 1992 começaram a surgir empresas provedoras de acesso a INTERNET, então o laborátorio Europeu de Física
+de particulas, o CERNE, inventou a World Wild Web(WWW), que foi usada para colocar informações á alcance de
+qualquer usúario de INTERNET
+
+= Toda a estrutura é dividida em Softwares e Hardwares =
+
+- Softwares são responsavéis por gerenciar dados e garantir que eles cheguem ao seu destino de forma segura
+- Hardwares gerenciam envios e recebimentos das informações e fazem ligações físicas entre equipamentos e 
+computadores atravez de cabos de fibra ótica e sinais de sátelites, interligando o mundo todo
+
+    Para a comunicação funcionar é preciso transformar essa informação, que sai so provedor de internet, em  
+um sinal gerenciável.
+Ex nas casas, o modem faz esse papel, o roteador cria rotas distribui a conexão e garante que os dados transmitidos
+via internet cheguem ao seu destino.
+
+        === Peças que montam a Internet ===
+
+    == Cliente ==
+    É uma aplicação que está conectada à Internet. A sua principal função é receber a interação do usuário e 
+traduzi-la em uma requisição para outro computador chamado Servidor Web.
+    Você pode pensar no seu computador como sendo o Cliente no modelo Cliente-Servidor. Todo computador tem um número
+único, como o seu CPF, chamado endereço IP.
+
+    == Servidor ==
+    É um super computador conectado à Internet. Tem o seu próprio endereço IP. O Servidor espera por requisições de outras
+máquinas (clientes). tem um software específico em execução que irá dizer como ele deve responder a uma requisição do seu 
+navegador. A principal função é armazenar, processar e entregar páginas web para os Clientes.
+    
+    == Endereço IP ==
+    Internet Protocol. é um identificador numérico para um dispositivo conectado à rede TCP/IP.  Os endereços IP tem quatro
+campos de dígitos separados por pontos (exemplo: 244.155.65.2), são chamados de endereço lógico. Para localizar um dispositivo
+conectado à Internet o endereço lógico é convertido em um endereço físico por um software. Esse endereço físico faz parte do
+seu hardware e é conhecido por endereço de controle de acesso à mídia (MAC address).
+
+    == TCP/IP ==
+    Transmission Control Protocol, TCP(Protocolo de Controle de Transmissão), é o principal protocolo de envio e recebimento de dados
+na internet. Defini como diferentes aplicações se comunicam na rede e também em como os dados enviados serão divididos em pacotes.
+    Internet Protocol, IP(Protocolo de Internet), define como os dados divididos em pacotes devem ser enviados para chegar corretamente
+ao destinatário.
+    O TCP/IP é a união dos protocolos TCP e IP, uma pilha de protocolos que é dividida em quatro camadas: aplicação, transporte,
+rede e interface.
+
+    == ISP ==
+    Internet Service Provider é o seu provedor de Internet. É qualquer empresa que nos fornece acesso ao maravilhoso mundo Web.
+
+    == DNS ==
+    Domain Name System é um dispositivo com uma base de dados distribuída que gerencia os nomes de serviços, computadores ou
+qualquer dispositivo conectado à Internet. Ele é usado para relacionar o endereço nominal (google.com) com o endereço IP. Os
+servidores DNS são responsáveis por localizar e traduzir para números (um endereço IP) as buscas por sites que digitamos no
+navegador.
+
+    == Port Number ==
+    O número de porta é um número de 16 bits utilizado para identificar uma porta específica no servidor, e está sempre
+associado ao endereço IP. O Port number é uma forma de identificar um processo específico encaminhado para o servidor.
+
+    == Host ==
+    é qualquer dispositivo conectado à rede que pode transmitir ou receber pacotes IP, seja como cliente, servidor ou qualquer
+outro tipo de modelo, sendo que cada host tem um endereço IP único.
+     É comum confundir o host com o servidor. Lembre-se que eles são coisas diferentes! O Servidor é um tipo de host - uma
+máquina específica com endereço IP. Por outro lado, o host pode ser também uma organização inteira que fornece um serviço de
+hospedagem para manter inúmeros servidores web. o host é o servidor web que hospeda a página na web.
+
+    == HTTP ==
+    Hyper-text Transfer Protocol é o protocolo utilizado para a comunicação entre navegadores e servidores na Internet.
+
+    == URL ==
+    Uniform Resource Locators, identifica um recurso web específico. O URL identifica o protocolo que será utilizado para
+comunicarmos com o servidor (https), o nome do host (google.com) e o recurso que queremos acessar (travel/flights).

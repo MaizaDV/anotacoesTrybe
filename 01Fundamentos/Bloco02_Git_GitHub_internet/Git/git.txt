@@ -1,0 +1,31 @@
+    o Git funciona como uma linha do tempo onde você consegue voltar e acessar todas as versões do seu projeto.
+
+o versionamento com Git, existem 3 conceitos principais:
+    Ramificação (branch);
+    Captura de mudanças (commit);
+    Mesclagem (merge);
+
+=== A ramificação funciona como ramos do seu projeto.
+== O projeto principal é o que fica na branch main. É essa branch que vai para produção, ou seja,
+fica acessível para as pessoas usuárias.
+== Após cada alteração, é importante que você informe ao Git que está na hora dele adicionar essas informações em 
+um commit, que é uma mensagem das modificações que você realizou no projeto e que cria um ponto de acesso para essas alterações.
+== Já o momento da mesclagem ou merge é quando você precisa atualizar a sua branch com a branch main ou atualizar a branch 
+main com as suas alterações. Esse processo é chamado de merge ou seja, ele mescla as alterações.
+
+== Um repositório é uma pasta no seu computador onde você pode armazenar arquivos, projetos e por aí vai.
+
+Repositório local: é o repositório no seu computador, que pode ser baixado da internet ou criado por você.
+Repositório remoto: é o repositório que está acessível na internet em uma plataforma de hospedagem de código, como por exemplo, o GitHub.
+
+== Renomeia a branch atual para main com o comando: git branch -m main
+== O README.md é arquivo de marcação de texto, que é responsável por informar e dar orientações sobre como utilizar o projeto.
+
+git add . ou git add nome-do-arquivo nome-do-outro-arquivo: adiciona as modificações em staging, que informa ao git as modificações realizadas e que vão estar no próximo commit;
+git commit -m "Mensagem sobre as alterações realizadas": informa quais alterações foram realizadas e cria uma versão do projeto que pode ser acessada a qualquer momento;
+git status: é utilizado sempre que você quiser verificar o que foi alterado.
+
+É considerada uma boa prática o hábito de realizar commits com frequência. Isso facilita o acompanhamento das alterações e também na correção de possíveis erros em seu
+ código. Procure evitar commits muito extensos e/ou com muitas alterações.
+
+ git log, mostra os commits feitos

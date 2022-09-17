@@ -1,0 +1,16 @@
+        === Protocolo ==
+    Protocolos são regras, para a internet funcionar ela precisa de regras, ou seja, protocolos.
+    Protocolos de rede ou internet, são regras que permitem a comunicação entre computadores conectados a internet,
+é assim que qualquer usúario consegue enviar e receber e-mails, mensagens, fazer dowloads, uploads etc, usar a
+internet como um todo
+    Os protocolos de internet é uma especie de lingua universal, todos os computadores e dispositivos se intendem
+independente da marca
+
+    TCP/IP - é acronimo de dois protocolos combinados, TCP(Transmission Control Protocol), protocolo de controle de
+transmissão, e IP(Internet Protocol), Protocolo de Internet, eles formam a base de envio e recebimento de dados
+de toda a internet, surgiu na ARPA NET, e facilitam a comunicação entre maquinas conectadas na rede.
+    HTTP - Hypertext transfer protocol, protocolo de transferencia de hipertexto, é o mais usado para navegação
+em sites da internet, tbm funciona como conexão entre cliente e servidor, aqui o cliente é o meu navegador de internet,
+é o servidor é o site, ou dominio onde está hospedado.
+    O navegador envia um pedido de acesso a uma página, a requisição é quando colocamos o endereço de algum site,
+o servidor manda uma resposta de permisão de acesso, com ela vem os arquivos que formam as páginas que conseguimos acessar.
