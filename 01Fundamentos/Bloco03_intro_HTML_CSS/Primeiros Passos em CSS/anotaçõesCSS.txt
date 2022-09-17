@@ -1,0 +1,11 @@
+    No meu html, na seção <head>, abaixo do <title>, fica o meu <style>, por ele consigo fazer alterações
+de estilo na minha página html
+
+        === estrutura ===
+
+        <style>
+            nomeDaTag ou id{
+                modeficações feitas de estilo
+            }
+        </style>
+

@@ -1,0 +1,7 @@
+            === HTML ===
+    Hyper Text Markup Language, é uma linguagem de marcação de texto.
+    
+    === não é linguagem de programação ===
+    Você pode pensar no HTML como se fosse o esqueleto da sua página. É através do HTML que você irá criar a
+estrutura de como a página vai ser exibida, definindo quais tags servirão para títulos, subtítulos, parágrafos,
+e outros conteúdos ricos como links, imagens, vídeos etc.

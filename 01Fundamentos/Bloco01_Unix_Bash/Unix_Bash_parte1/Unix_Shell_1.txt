@@ -1,0 +1,56 @@
+== Por qual motivo fazemos uso da linha de comando se podemos resolver demandas
+em poucos cliques através da interface gráfica? ==
+-- ela é simples, estável, rápida, eficiente e exige baixíssimo poder de hardware. --
+
+        == UNIX == 
+Nos anos 60 foi desenvolvido um sistema por KEN THOMPSON e DENNIS RITCHIE, um sistema considerado pai de todos
+os sistemas, utilizando a linguagem de programação C,foi o primeiro a produzir conceitos muito 
+importantes para sistemas operacionais, como suporte a multi usuarios, permite que vários usuários utilizem
+ao mesmo tempo o mesmo computador, sem que a atividade de um usuário interfira na do outro, tambem é multi tarefas, 
+e tem portabilidade. O linux e o MacOS foram baseados nessa linguagem.
+
+=O UNIX é MOntado em 3 Níveis=
+1° Nível- Kernel -
+    O computador pode ser dividido em duas partes, os Softwares e hardwares, o KERNEL é responsável
+por fazer a interação entre esses dois, é o núcleo do sistema, ele é o cerebro do sistema operacional,
+ele gerencia os recursos do sistema, e permite que os programas façam uso deles, ele começa a funcionar
+assim que o computador é ligado, nesse momento ele inicia a detecçao de todo Hardware indispensável para
+a máquina funcionar(monitor, placas de video, processador etc), o sitema operacional e carregado em seguida e 
+quando o usuário faz seu login, o KERNEL  passa a administrar as prinipais funções dentro do sistema operacional,
+isso inclui o gerenciamente de memória, de processos e de arquivos.
+
+2° Nível- Shell -
+    É a interface entre sistema operacional, usuário e o núcleo do sistema(sistema operacional, você e o Kernel).
+A primeiro processo de entrar no sistema(o login) é o seu Shell, em geral os sheels dos sistemas usam uma interface
+de linha de comando-Comand Line Interface- ou uma interface gráfica de usuário-Graphic User Interface-
+A função do SHELL é ler a linha de comando, interpretar seus significados, executar o comando e devolver o resulatdo
+para o usuário. Os principais tipos de Shell são = SH, BASH, CSH, TCSH, ZSH.
+
+3° Nível- Aplicativos -
+    São os softwares que os usuários possam usar e a maioria dos comandos UNIX.
+
+= PROCESSOS = 
+    Tudo o que você faz no unix é um processo, cada vez que é executado uma tarefa ou um comando ele é interpretado
+pelo UNix como sendo um processo, cada processo tem um identificador único chamado PID(Precess Identifier), ele carrega
+algumas informações comom o usuário proprietário do processo, sesão do shell, estado atual(Se estáfuncionando, suspenso
+ou aguardando), linha de comando utilizada etc.
+
+= ARQUIVOS =
+    No unix tudo é um arquivo, diretórios são arquivos, arquivos são arquivos e dispositivos são arquivos.
+Hierarquias de ARQUIVOS no unix-
+/ - é o diretório raíz
+BOOT - arquivos de configuração para inicialização
+BIN - aplicativos binários
+DEV - arquivos do dispositivo
+ETC - escripts de inicialização
+HOME - diretórios home para  diferentes usuários
+PROC - diretório dinâmico especial que mantem informações sobre o estado do sistema, incluindo processos atualmente executados
+ROOT - diretório HOME do usuário ROOT
+SBIN - binários de sistema importantes
+TMP - arquivos temporarios
+USR - aplicativos e arquivos, que na maioria das vezes, é diponivel o acesso por todos os usuários
+VAR -aquivos váriaveis, como log e banco de dados.
+
+== Observação: Há uma diferença no nome dos diretórios que guardam os arquivos do usuário no Mac e no Linux, no video está sendo
+usado o Mac, onde o diretório usado é "users", já no Linux esse diretório seria "home".
+

@@ -1,0 +1,54 @@
+/ - diretório raíz
+ls -a - lista os diretórios ocultos tbm
+ls - listar diretórios de onde vc está
+~ - é diretório raíz dentro do contexto
+cd - change directory, entra no diretório
+clear - limpa o terminal
+pwd - mostra o diretório completo
+cp - copy, copia um arquivo
+cat -contatenate, abrir um arquivo
+mv - move, mover um arquivo de um diretório para outro
+cd . - referencia ele mesmo
+cd .. - retorna para o diretório de origem de onde está. referencia ao diretório pai
+rm - remove, apagar um arquivo
+mkdir - make diretory, cria um diretório
+rmdir - remove diretory, apagar um diretório. Só funciona se o diretório estiver vazio,
+precisa apagar os arquivos 1°
+rm -rf - apaga com arquivos
+
+
+== less ==
+    Abre parte do arquivo por páginas, barra de espaço leva á próxima página, Q - sair da visualização
+   = / = escreve algo e procura pelo valor, usado para encontrar algo dentro dessas páginas, a
+    letra n passa para a próxima palavra 
+
+== head == 
+    Mostra as dez primeiras linhas do arquivo(valores).
+    head -5 traz somente as cincos primeiras linhas do aquivos(valores).
+
+== tail == 
+    Mostra os dez últimos valores
+    tail -5 traz os cincos últimos valores
+
+== grep == 
+    tbm é uma busca dentro dos arquivos, ele é case sensitive, a palavra precisa ser exatamente igual à busca
+    grep -i - o valor deixa de ser case sensitive, a palavra tanto faz se é maiusculo ou minusculo
+    grep -i  '' - faz a busca de uma frase dentro de aspas simples e sem ser case sensitive
+    grep -iv '' - mostra todos os valores que não correspondem à frase da busca das aspas simples
+    grep -in '' - mostra a linha em que aparece o valor pesquisado dentro das aspas simples
+    grep -ic '' - mostra a quantidade de vezes que aparece a busca dentro das aspas simples
+
+== wc ==
+    Word Count, ele mostra três valores diferentes, o 1° é a quantidade de linhas dentro do arquivo, 
+    2° é a quantidade de palavras dentro do arquivo, 3° é a quantidade de caracteres.
+    wc -w - mostra a quantidade de palavras que o arquivo tem, de forma individual
+    wc -l - lines, mostra a quantidade de linhas que o arquivo tem
+    wc -c - mostra a quantidade de caracteres(letras etc) que tem no arquivo 
+
+== comandos curingas ==
+ls * - mostra tudo dentro de um diretório, facilita pois lista os arquivos sem precisar entrar toda hora no arquivos
+ls ?palavra - ele substitui uma letra que não lembramos e mostra os arquivos
+man - manual, acessa o manual de um comando pelo terminal 
+whatis - o que é? ele diz o que o comando faz
+apropos - te ajuda a achar o comando que vc precisa, basta colocar o que quer fazer 
+

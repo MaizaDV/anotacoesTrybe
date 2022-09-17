@@ -1,0 +1,10 @@
+    === Agrupamentos de Seletores ===
+    Podemos economizar linhas de código simplesmente agrupando estilos basta agrupar os seletores que sofrerão as mesmas mudanças
+
+    === Pseudoclasse ===
+    Sempre vem com o nome do elemento dois pontos(:), e o que vier depois desses dois pontos é a pseudoclasse
+
+    -- elemento:hover{} é quando coloca o mause em cima de algum -- -- elemento, funciona somente com mauses, não com touch.
+    -- elemento:active{} é quando ativa um elemento, quando clicar em um elemento, algo acontece.
+    -- elemento:focus em um input de formulário, para quando o elemento estiver selecionado e puder ter um valor inserido.
+    DICA: Experimente colocar a propriedade transition nos seus estilos que possuem pseudoclasses.
